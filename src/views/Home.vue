@@ -26,6 +26,21 @@
         <div class="msg-bubble"><p class="why-text">Fast and easy modern interface</p></div>
       </div>
     </div>
+
+    <div class="container3">
+      <h1 class="sub-title">Get the desktop version</h1>
+      <p>If you feel more comfrotable using desktop version 
+        instead of the browser.Well you can do it!
+      </p>
+    <button class="download-btn">Download</button>
+    </div>
+
+
+    <div class="footer">
+      <h1>HobbyMate</h1>
+      <p>Copyright © 2022 HobbyMate</p>
+      <p>Created by Boris 💛</p>
+    </div>
   </div>
 </template>
 
@@ -37,7 +52,7 @@ export default {
 </script>
 
 
-<style lang="scss">
+<style scoped lang="scss">
 
 .container{
   display: flex;
@@ -140,32 +155,68 @@ export default {
       height: 100%;
     }
   }
+}
 
+.container3{
+  width: 550px;
+  margin: auto auto 100px auto;
+
+  .sub-title{
+    font-size: 1.8rem;
+    margin: 100px 0 0 0;
+  }
+
+  .download-btn{
+    background: #E65C34;
+    color: #fff;
+    border: 0;  
+    border-radius: 8px;
+    padding: 17px;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+}
+
+.footer{
+  background: #F5D0B8;
+  height: 242px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 
 @media only screen and (max-width: 600px) {
-.container{
+  .container{
 
-  img{
-    width: 300px;
-    height: auto;
-    margin: 0;
+    img{
+      width: 300px;
+      height: auto;
+      margin: 0;
+    }
   }
-}
 
-.panel{
-  width: 85%;
+  .panel{
+    width: 85%;
 
-  img{
-    width: 55%;
+    img{
+      width: 55%;
+    }
   }
-}
 
-.innerCont{
-  width: 85%;
-  margin: auto;
-}
+  .container2{
+    width: 100%;
+  }
+
+  .innerCont{
+    width: 85%;
+    margin: auto;
+  }
+
+  .container3{
+    width: 100%;
+  }
 
 }
 
